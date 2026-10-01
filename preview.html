@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>AE Employer Election Pace Thermometer — local preview</title>
+<style>
+  body { margin: 0; padding: 20px; background: #eef1f4; font-family: Arial, sans-serif; }
+  h2 { font-family: Arial, sans-serif; color: #333; }
+  com-porticobenefits-aepace { display: block; width: 420px; height: 370px; }
+</style>
+</head>
+<body>
+<h2>AE Employer Election Pace Thermometer — standalone preview (mock data, exercises the real SAC widget lifecycle hooks)</h2>
+<com-porticobenefits-aepace id="widget"></com-porticobenefits-aepace>
+
+<script src="main.js"></script>
+<script>
+  const widget = document.getElementById("widget");
+  widget.onCustomWidgetBeforeUpdate({ width: 420, height: 370 });
+  widget.onCustomWidgetAfterUpdate({ width: 420, height: 370 });
+</script>
+</body>
+</html>
